@@ -1,4 +1,4 @@
-Task 1:
+-- Task 1:
 SELECT * FROM nomnom;
 
 -- The columns are:
@@ -10,7 +10,7 @@ SELECT * FROM nomnom;
 --     price
 --     health
 
-Task 2:
+-- Task 2:
 SELECT DISTINCT neighborhood
 FROM nomnom;
 
@@ -23,7 +23,7 @@ FROM nomnom;
 --     Queens
 --     Downtown
 
-Task 3:
+-- Task 3:
 SELECT DISTINCT cuisine
 FROM nomnom;
 
@@ -43,45 +43,45 @@ FROM nomnom;
 --     Soul Food
 --     Mexican
 
-Task 4:
+-- Task 4:
 SELECT *
 FROM nomnom
 WHERE cuisine = 'Chinese';
 
-Task 5:
+-- Task 5:
 SELECT *
 FROM nomnom
 WHERE review >= 4;
 
-Task 6:
+-- Task 6:
 SELECT *
 FROM nomnom
 WHERE cuisine = 'Italian' AND price = '$$$';
 
-Task 7:
+-- Task 7:
 SELECT *
 FROM nomnom
 WHERE name LIKE "%meatball%";
 
-Task 8:
+-- Task 8:
 SELECT *
 FROM nomnom
 WHERE neighborhood = 'Midtown'
 OR neighborhood = 'Downtown'
 OR neighborhood = 'Chinatown';
 
-Task 9:
+-- Task 9:
 SELECT *
 FROM nomnom
 WHERE health IS NULL;
 
-Task 10:
+-- Task 10:
 SELECT *
 FROM nomnom
 ORDER BY review DESC
 LIMIT 10;
 
-Task 11:
+-- Task 11:
 SELECT name,
  CASE
   WHEN review > 4.5 THEN 'Extraordinary'
